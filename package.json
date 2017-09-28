@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-execute-on-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Access JS on web pages directly through Chrome extensions",
   "main": "execute-on-website.js",
   "repository": {
