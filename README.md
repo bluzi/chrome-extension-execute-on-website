@@ -45,12 +45,6 @@ No worries, here's an example:
 ```json
 "content_scripts": [
     {
-      "matches": [
-        "*://*/*"
-      ],
-      "include_globs": [
-        "*://*.google.*/*"
-      ],
       "js": [
         "https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website",
         "./inject.js"
@@ -83,12 +77,6 @@ An example for the confused ones:
 ```json
 "content_scripts": [
     {
-      "matches": [
-        "*://*/*"
-      ],
-      "include_globs": [
-        "*://*.google.*/*"
-      ],
       "js": [
         "node_modules/chrome-extension-execute-on-website/execute-on-website.js",
         "./inject.js"
@@ -119,9 +107,6 @@ Just to make sure you understand, here's an example of a full manifest with the 
     {
       "matches": [
         "*://*/*"
-      ],
-      "include_globs": [
-        "*://*.google.*/*"
       ],
       "js": [
         "https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website",
