@@ -1,0 +1,21 @@
+{
+  "name": "chrome-extension-execute-on-website",
+  "version": "1.0.0",
+  "description": "Access JS on web pages directly through Chrome extensions",
+  "main": "execute-on-website.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluzi/chrome-extension-execute-on-website.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "javascript"
+  ],
+  "author": "Eliran Pe'er (eliran013@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluzi/chrome-extension-execute-on-website/issues"
+  },
+  "homepage": "https://github.com/bluzi/chrome-extension-execute-on-website#readme"
+}
