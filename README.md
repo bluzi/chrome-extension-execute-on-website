@@ -30,30 +30,35 @@ Anyway, so that's more or less it. Best 500 bytes (unminified) your Chrome exten
 ### jsdelivr (Recommended)
 I just love jsdelivr. 
 
-Simply go to your `manifest.json`, make sure you have `contentSettings` permission, like that:
+1. Download the script from the following URL, and put it somewhere in your extension's folder:
+
+`https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website/execute-on-website.min.js`
+
+2. Go to your manifest file, make sure you have `contentSettings` permission, like that:
 ```json
   "permissions": [
     "contentSettings"
   ]
 ```
-Under `content_scripts` add `js` array and put the following URL as an item:
 
-`https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website`
+Under `content_scripts` add `js` array and insert the path to the library file as an item.
 
 No worries, here's an example:
+
+Assuming your script is in a folder called `js`:
 
 ```json
 "content_scripts": [
     {
       "js": [
-        "https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website",
+        "js/execute-on-website.min.js",
         "./inject.js"
       ]
     }
   ]
 ```
 
-If you want you can download the file from jsdelivr to your extension's folder, and use relative link. It will save your extension the network traffic of going to jsdeliver and download these ~200 bytes.
+As simple as that.
 
 ### npm
 
