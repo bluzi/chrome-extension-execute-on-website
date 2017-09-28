@@ -114,7 +114,7 @@ Just to make sure you understand, here's an example of a full manifest with the 
         "*://*/*"
       ],
       "js": [
-        "https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website",
+        "js/execute-on-website.min.js",
         "./inject.js"
       ]
     }
