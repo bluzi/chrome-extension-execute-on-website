@@ -7,7 +7,7 @@ Or is it?..
 ## What is it?
 Well, it turns out that Chrome extensions does not have access to the JavaScript on the a webpage, even if the extension is a content script, meaning that you can't access variables and stuff on the page itself.
 
-I know, it's disapointing. Anyway, there is a solution, and it's basically to inject a script tag to the page and do whatever you want in this script. What's the problem you ask? it's ugly as f, that's the problem.
+I know, it's disappointing. Anyway, there is a solution, and it's basically to inject a script tag to the page and do whatever you want in this script. What's the problem you ask? it's ugly as f, that's the problem.
 
 Well, luckily, I've got the solution!
 
