@@ -5,16 +5,16 @@ Long name, I know, but it is self-explaining.
 Or is it?..
 
 ## What is it?
-Well, it turns out that Chrome extensions does not have access to the JavaScript on the a webpage, even if the extension is a content script, meaning that you can't access variables and stuff on the page itself.
+Well, it turns out that Chrome extensions do not have access to the JavaScript on a webpage, even if the extension is a content script, meaning that you can't access variables and stuff on the page itself.
 
-I know, it's disapointing. Anyway, there is a solution, and it's basically to inject a script tag to the page and do whatever you want in this script. What's the problem you ask? it's ugly as f, that's the problem.
+I know, it's disappointing. Anyway, there is a solution, and it's basically to inject a script tag to the page and do whatever you want in this script. What's the problem you ask? it's ugly as f, that's the problem.
 
 Well, luckily, I've got the solution!
 
 This tiny library allows you to easily execute JavaScript code from your Chrome extension in a webpage.
 
 ## Usage
-How does it work, you ask? as simple as that:
+How does it work, you ask? As simple as that:
 
 ```javascript
 exec(() => {
@@ -24,7 +24,7 @@ exec(() => {
 
 Nice, huh? I know! 
 
-Anyway, so that's more or less it. Best 500 bytes (unminified) your Chrome extension is getting.
+Anyway, so that's it. Best 500 bytes (unminified) your Chrome extension is getting.
 
 ## Installation
 ### jsdelivr (Recommended)
