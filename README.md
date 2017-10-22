@@ -1,20 +1,21 @@
 # chrome-extension-execute-on-website
 
-Long name, I know, but it is self-explanatory. 
+It is a long name, but it will self-explanatory so, its worth
 
 Or is it?...
 
 ## What is it?
-Well, it turns out that Chrome extensions do not have access to the JavaScript on a webpage, even if the extension is a content script, meaning that you can't access variables and content on the page itself.
 
-I know, it's disappointing. Anyway, there is a solution, and it's to inject a script tag into the page and then execute whatever you want in this script. What's the problem you ask? It's ugly as f, and that's the problem.
+It turns out that Chrome extensions does not have access to the JavaScript on a webpage, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
+
+It's disapointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
 
 Well, luckily, I've got the solution!
 
-This tiny library allows you to easily execute JavaScript code from your Chrome extension in a webpage.
+This tiny library allows you to easily execute JavaScript code in a webpage from your Chrome extension.
 
 ## Usage
-How does it work, you ask? It's as simple as:
+But how does it work? It is as simple as this:
 
 ```javascript
 exec(() => {
@@ -22,17 +23,18 @@ exec(() => {
 });
 ```
 
-Nice, huh? I know! 
+Nice, huh? I know!
 
 Anyway, so that's more or less it. Best 500 bytes (unminified) your Chrome extension is going to get.
 
 ## Installation
+
 ### jsDelivr (Recommended)
 I just love jsDelivr. 
 
-1. Download the script from the following URL, and put it somewhere in your extension's folder:
 
-`https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website/execute-on-website.min.js`
+1. Download the script from the this --> [URL](https://cdn.jsdelivr.net/npm/chrome-extension-execute-on-website/execute-on-website.min.js) <--, and put it somewhere in your extension's folder:
+
 
 2. Go to your manifest file, make sure you have `contentSettings` permission, like this:
 ```json
@@ -90,7 +92,7 @@ And that should do the job. Here is an example:
 ```
 
 ## Sample Manifest
-Here's an example of a full manifest with the library included:
+Here is an example of a full manifest, with the library included:
 ```json
 {
   "name": "My Extension",
