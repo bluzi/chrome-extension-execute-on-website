@@ -1,14 +1,14 @@
 # chrome-extension-execute-on-website
 
-It is a long name, but it will self-explanatory so, its worth
+It is a long name, but it is self-explanatory, so it's worth it.
 
 Or is it?...
 
 ## What is it?
 
-It turns out that Chrome extensions does not have access to the JavaScript on a webpage, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
+It turns out that Chrome extensions do not have access to the JavaScript on a webpage, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
 
-It's disapointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
+It's disapointing. There is a solution, you have to inject a script tag to the page and then execute whatever you want in the script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
 
 Well, luckily, I've got the solution!
 
