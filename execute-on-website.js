@@ -1,5 +1,6 @@
-window.exec = function(func) {
-    var container = document.querySelector('body') 
+window.exec = function(func, container) {
+    container = container 
+        || document.querySelector('body') 
         || document.querySelector('html') 
         || document.documentElement;
 
