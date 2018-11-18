@@ -6,26 +6,26 @@ Or is it?...
 
 ## What is it?
 
-It turns out that Chrome extensions does not have access to the JavaScript on a webpage, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
+It turns out that Chrome extensions does not have access to the JavaScript on a web page, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
 
-It's disapointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
+It's disappointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
 
 Well, luckily, I've got the solution!
 
-This tiny library allows you to easily execute JavaScript code in a webpage from your Chrome extension.
+This tiny library allows you to easily execute JavaScript code in a web page from your Chrome extension.
 
 ## Usage
 But how does it work? It is as simple as this:
 
 ```javascript
 exec(() => {
-    console.log('This is the window of the current webpage:', window);
+    console.log('This is the window of the current web page:', window);
 });
 ```
 
 Nice, huh? I know!
 
-Anyway, so that's more or less it. Best 500 bytes (unminified) your Chrome extension is going to get.
+Anyway, so that's more or less it. The best 500 bytes (unminified) your Chrome extension is going to get.
 
 ## Installation
 
