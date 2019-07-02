@@ -1,18 +1,18 @@
 # chrome-extension-execute-on-website
 
-It is a long name, but it will self-explanatory so, its worth
+It's a pretty long name, but it's pretty self-explanatory so, it's worth it...
 
-Or is it?...
+...Or is it?
 
 ## What is it?
 
-It turns out that Chrome extensions does not have access to the JavaScript on a webpage, even if the extension is a content script. As a result, you can't access variables and content on the page itself.
+It turns out that Chrome extensions don't have access to JavaScript on a webpage; even if the extension is a content script. As a result, you can't access variables and content on the page itself.
 
-It's disapointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this script. You may ask yourself what is the problem? It's ugly as f, that's the problem.
+Pretty disappointing. Anyway, there is a solution, you have to inject a script tag to the page and then execute whatever you want in this tag. You may ask yourself "what is the problem?". It's ugly as F.., that's the problem.
 
-Well, luckily, I've got the solution!
+Well, luckily, I've got a solution!
 
-This tiny library allows you to easily execute JavaScript code in a webpage from your Chrome extension.
+This tiny library allows you to easily execute JavaScript code on a web-page from your Chrome extension.
 
 ## Usage
 But how does it work? It is as simple as this:
@@ -25,7 +25,7 @@ exec(() => {
 
 Nice, huh? I know!
 
-Anyway, so that's more or less it. Best 500 bytes (unminified) your Chrome extension is going to get.
+Anyway, so that's more or less it. Best 500 bytes (un-minified) your Chrome extension is going to get.
 
 ## Installation
 
@@ -66,7 +66,7 @@ It's as simple as that.
 
 Navigate to your extension's folder, and run the following command: (After making sure you have Node installed)
 ```bash
-npm i chrome-extension-execute-on-website
+npm install chrome-extension-execute-on-website
 ```
 Good, now go to your `manifest.json`, make sure you have `contentSettings` permission:
 ```json
